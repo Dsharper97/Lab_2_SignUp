@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Greeting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="323dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="Save entered information"
+        android:text="@string/Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordCon" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints="Create Passwrd 8-12 characters in length"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordCon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="140dp"
+        android:autofillHints="Enter First Name and Last Name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Name"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PasswordCon"
+        android:layout_width="213dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="3dp"
+        android:autofillHints="Confirm Password"
+        android:ems="10"
+        android:hint="@string/PasswordCon"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="7dp"
+        android:autofillHints="Enter email address"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="48dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="94dp"
+        android:text="@string/Signup"
+        app:layout_constraintBottom_toTopOf="@+id/UserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
